@@ -1,9 +1,11 @@
-# get metadata of DataFrame
 import pandas as pd
 
 # read csv file
 cars = pd.read_csv("Automobile.csv")
 
 # display DataFrame
+# select top 2 rows
+print(cars.head(2))
 
-print(cars.info())
+# select bottom 2 rows
+print(cars.tail(2))
